@@ -1,0 +1,63 @@
+{% extends 'admin_layout.html' %}
+{% block content %}
+<div class="container">
+        <div style="margin-bottom: 10px">
+            <a class="btn btn-success" href="/goods/add">
+                <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+                添加商品
+            </a>
+        </div>
+        <div class="panel panel-default">
+      <!-- Default panel contents -->
+          <div class="panel-heading">
+              <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+              商品列表
+          </div>
+          <!-- Table -->
+          <table class="table table-bordered text-center" >
+            <thead>
+              <tr>
+                  <th>商品名</th>
+                  <th>商品简介</th>
+                  <th>商品种类</th>
+                  <th>商品型号</th>
+                  <th>商品状态</th>
+                  <th>商品销量</th>
+                  <th>商品库存</th>
+                  <th>会员价</th>
+                  <th>市场价</th>
+                  <th>是否为特价商品</th>
+                  <th>商品品牌</th>
+                  <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for obj in queryset %}
+              <tr>
+                  <td>{{ obj.mingcheng }}</td>
+                  <td>{{ obj.jianjie }}</td>
+                  <td>{{ obj.get_type_id_display }}</td>
+                  <td>{{ obj.get_xinghao_display }}</td>
+                  <td>{{ obj.get_status_display }}</td>
+                  <td>{{ obj.sales }}</td>
+                  <td>{{ obj.stock }}</td>
+                  <td>{{ obj.huiyuanjia }}</td>
+                  <td>{{ obj.price }}</td>
+                  <td>{{ obj.get_tejia_display }}</td>
+                  <td>{{ obj.pinpai }}</td>
+                <td>
+                    <a class="btn btn-primary btn-xs" href="/goods/{{ obj.id }}/edit/">编辑</a>
+                    <a class="btn btn-danger btn-xs" href="/goods/{{ obj.id }}/delete/">删除</a>
+                </td>
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <div>
+{#            <ul class="pagination">#}
+{#               {{ pageString }}#}
+{#            </ul>#}
+        </div>
+    </div>
+{% endblock %}

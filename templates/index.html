@@ -1,0 +1,156 @@
+{% extends 'home_layout.html' %}
+{% load static %}
+{% block title %}老虎商城-商城首页{% endblock %}
+{% block js %}
+    <script type="text/javascript" src="js/paging.js"></script>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
+{% block css %}
+    <style>
+        body{
+            background:0 0 repeat-y url("{% static 'img/background.png' %}") ;
+            background-size: cover;
+        }
+    </style>
+{% endblock %}
+
+
+{% block content %}
+<!--中部-->
+<div id="center">
+    <!--广告轮播图-->
+    <div id="ad">
+        <div class="pic">
+            <div class="content">
+                <img src="../static/img/ad_1.png" alt="">
+                <img src="../static/img/ad_2.png" alt="">
+                <img src="../static/img/ad_3.png" alt="">
+                <img src="../static/img/ad_4.png" alt="">
+                <img src="../static/img/ad_5.png" alt="">
+            </div>
+            <div class="slider_ctl">
+                <div class="right">></div>
+                <ul class="index">
+                </ul>
+                <div class="left"><</div>
+            </div>
+        </div>
+    </div>
+    <!---公告--->
+    <div id="board">
+        <div class="bor_login bor_cl"></div>
+        <div class="bor_ad bor_cl"></div>
+        <div class="bor_border bor_cl"></div>
+    </div>
+</div>
+<!--秒杀-->
+<div id="ms">
+    <div class="ms_top">
+        <span>秒杀活动</span>
+        <span>总有你想不到的低价</span>
+    </div>
+    <div class="ms_body">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="../static/img/goods/good1.png" alt="">
+                    <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                    <i class="yuan">￥</i><span class="price">599</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                   <img src="../static/img/goods/good1.png" alt="">
+                    <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                    <i class="yuan">￥</i><span class="price">599</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="../static/img/goods/good1.png" alt="">
+                <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                <i class="yuan">￥</i><span class="price">599</span>
+            </a></li>
+            <li>
+                <a href="#">
+                    <img src="../static/img/goods/good1.png" alt="">
+                    <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                    <i class="yuan">￥</i><span class="price">599</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="../static/img/goods/good1.png" alt="">
+                <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                <i class="yuan">￥</i><span class="price">599</span>
+             </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--热卖-->
+<div id="hot_goods">
+    <h3>热卖商品</h3>
+    <div class="hot_goods_body">
+       <ul>
+           <li>
+               <a href="">
+                   <img src="../static/img/goods/goods6.png" alt="">
+                   <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                   <i class="yuan">￥</i><span class="price">599</span>
+               </a>
+           </li>
+           <li>
+               <a href="">
+                   <img src="../static/img/goods/goods7.png" alt="">
+                   <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                   <i class="yuan">￥</i><span class="price">599</span>
+               </a>
+           </li>
+           <li>
+               <a href="">
+                   <img src="../static/img/goods/goods8.png" alt="">
+                   <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                   <i class="yuan">￥</i><span class="price">599</span>
+               </a>
+           </li>
+           <li>
+               <a href="">
+                   <img src="../static/img/goods/goods9.png" alt="">
+                   <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                   <i class="yuan">￥</i><span class="price">599</span>
+               </a>
+           </li>
+           <li>
+               <a href="">
+                   <img src="../static/img/goods/goods10.png" alt="">
+                   <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                   <i class="yuan">￥</i><span class="price">599</span>
+               </a>
+           </li>
+           <li>
+               <a href="">
+                   <img src="../static/img/goods/goods6.png" alt="">
+                   <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                   <i class="yuan">￥</i><span class="price">599</span>
+               </a>
+           </li>
+           <li>
+               <a href="">
+                   <img src="../static/img/goods/goods7.png" alt="">
+                   <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                   <i class="yuan">￥</i><span class="price">599</span>
+               </a>
+           </li>
+           <li>
+               <a href="">
+                   <img src="../static/img/goods/goods8.png" alt="">
+                   <p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+                   <i class="yuan">￥</i><span class="price">599</span>
+               </a>
+           </li>
+       </ul>
+    </div>
+</div>
+{% endblock %}

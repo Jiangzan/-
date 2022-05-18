@@ -1,0 +1,58 @@
+{% extends 'admin_layout.html' %}
+{% block content %}
+<div>
+    <div class="container">
+        <div style="margin-bottom:10px">
+            <a class="btn btn-success" href="/user/add/">新建用户</a>
+        </div>
+
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                管理员列表
+            </div>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>管理员编号</th>
+                  <th>管理员姓名</th>
+                  <th>管理员密码</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>唐小果</td>
+                    <td>891199#</td>
+                    <td>
+                      <a class="btn btn-primary btn-xs" href="#">编辑</a>
+                      <a class="btn btn-danger btn-xs" href="#">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1003</td>
+                    <td>王红</td>
+                    <td>abcdefg</td>
+                    <td>
+                      <a class="btn btn-primary btn-xs" href="#">编辑</a>
+                      <a class="btn btn-danger btn-xs" href="#">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1005</td>
+                    <td>宋桥</td>
+                    <td>#@*123qqR</td>
+                    <td>
+                      <a class="btn btn-primary btn-xs" href="#">编辑</a>
+                      <a class="btn btn-danger btn-xs" href="#">删除</a>
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

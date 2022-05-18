@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>老虎商城-商品详情</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+</head>
+<body>
+<div id="header">
+      <!--顶部-->
+    <div class="header_top">
+        <div class="header_top_center">
+            <div class="h_top_left">
+                <div style="margin-right: 30px;display: inline-block">
+
+                    <a href="index.html">商城首页</a>
+                </div>
+                嗷，欢迎来到老虎商城
+            </div>
+            <div class="h_top_right">
+                <a href="login.html">登录</a>
+                <a href="regist.html">免费注册</a>
+                <a href="#">购物车</a>
+                <a href="#">我的订单</a>
+            </div>
+        </div>
+    </div>
+
+	<div class="header_center">
+        <div class="h_c_logo">
+            <img src="{% static 'img/logo.png' %}" alt="">
+        </div>
+
+        <div class="h_c_search">
+            <form action="#" >
+                <input type="text" placeholder="搜索 天猫 商品/品牌/店铺" class="t_input">
+                <input type="submit" class="t_button" value="搜索">
+            </form>
+            <div class="hot">
+                <a href="#">新款连衣裙</a>
+                <a href="#">四件套</a>
+                <a href="#">潮流T恤</a>
+                <a href="#">时尚女鞋</a>
+                <a href="#">短裤半身裙</a>
+            </div>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="goods_list.html">电脑办公</a></li>
+            <li><a href="#">家具家居</a></li>
+            <li><a href="#">鲜果时光</a></li>
+            <li><a href="#">图书音像</a></li>
+            <li><a href="#">母婴孕婴</a></li>
+        </ul>
+    </div>
+
+
+    <div class="center_con clearfix">
+		<div class="main_menu fl"><img src="../static/img/good1.jpg"></div>
+		<div class="goods_detail_list fr">
+			<h3>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</h3>
+			<p>小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</p>
+			<div class="prize_bar">
+				<div class="show_prize fl">￥<em>599</em></div>
+			</div>
+			<div class="goods_num clearfix">
+				<div class="num_name fl">数量：</div>
+				<div class="num_add fl">
+					<input type="text" class="num_show fl" value="1">
+					<a href="javascript:;" class="add fr">+</a>
+					<a href="javascript:;" class="minus fr">-</a>
+				</div>
+			</div>
+			<div class="total">总价：<em>￥599</em></div>
+			<div class="operate_btn">
+				<a href="" class="buy_btn">立即购买</a>
+				<a href="" class="add_cart">加入购物车</a>
+			</div>
+		</div>
+	</div>
+	<div class="main_wrap clearfix">
+		<div class="l_wrap fl clearfix">
+			<div class="new_goods">
+				<h3>新品推荐</h3>
+				<ul>
+					<li>
+						<a href="#"><img src="../static/img/good2.jpg"></a>
+						<h4><a href="#">小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</a></h4>
+						<div class="prize">￥499</div>
+					</li>
+					<li>
+						<a href="#"><img src="../static/img/good3.jpg"></a>
+						<h4><a href="#">小米（MI）小米净化器2智能家用卧室空气净化器除甲醛雾霾P</a></h4>
+						<div class="prize">￥699</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="r_wrap fr clearfix">
+			<ul class="detail_tab clearfix">
+				<li class="active">商品详情</li>
+				<li>规格与包装</li>
+				<li>商品评价(2)</li>
+				<li>售后服务</li>
+			</ul>
+			<div class="tab_content current">
+				<dl>
+					<dt>商品详情：</dt>
+					<dd>它纤薄如刃，轻盈如羽，却又比以往速度更快、性能更强大。它为你展现的，是迄今最明亮、最多彩的 Mac 笔记本显示屏。它更配备了触控栏，一个内置于键盘的玻璃面多点触控条，让你能在需要时快速取用各种工具。MacBook Pro 是对我们突破性理念的一场出色演绎，而它，也正期待着演绎你的奇思妙想。 </dd>
+				</dl>
+			</div>
+			<div class="tab_content">
+				<dl>
+					<dt>规格与包装：</dt>
+					<dd>它纤薄如刃，轻盈如羽，却又比以往速度更快、性能更强大。它为你展现的，是迄今最明亮、最多彩的 Mac 笔记本显示屏。它更配备了触控栏，一个内置于键盘的玻璃面多点触控条，让你能在需要时快速取用各种工具。MacBook Pro 是对我们突破性理念的一场出色演绎，而它，也正期待着演绎你的奇思妙想。 </dd>
+				</dl>
+			</div>
+			<div class="tab_content">
+				<ul class="judge_list_con">
+					<li class="judge_list fl">
+						<div class="user_info fl">
+							<img src="images/cat.jpg">
+							<b>潇***啼</b>
+						</div>
+						<div class="judge_info fl">
+							<div class="stars_five"></div>
+							<div class="judge_detail">派送非常快，第二天上午就收到。2天使用初步总结，前一部手机也是华为P9plus.MATE10pro包装原封未拆精致大气。拆开后第一眼就看到宝石蓝的手机，非常惊艳；然后就是配件一应俱全。开机各方面设置，把通讯录、短信等同步好，同品牌手机同步很快。和P9plus一样的后置指纹识别很方便。录制指纹容易，解锁非常快，秒开！屏幕完好，默认分辨率显示效果很好。</div>
+						</div>
+					</li>
+					<li class="judge_list fl">
+						<div class="user_info fl">
+							<img src="images/cat.jpg">
+							<b>潇***啼</b>
+						</div>
+						<div class="judge_info fl">
+							<div class="stars_four"></div>
+							<div class="judge_detail">派送非常快，第二天上午就收到。2天使用初步总结，前一部手机也是华为P9plus.MATE10pro包装原封未拆精致大气。拆开后第一眼就看到宝石蓝的手机，非常惊艳；然后就是配件一应俱全。开机各方面设置，把通讯录、短信等同步好，同品牌手机同步很快。和P9plus一样的后置指纹识别很方便。录制指纹容易，解锁非常快，秒开！屏幕完好，默认分辨率显示效果很好。</div>
+						</div>
+					</li>
+					<li class="judge_list fl">
+						<div class="user_info fl">
+							<img src="images/cat.jpg">
+							<b>潇***啼</b>
+						</div>
+						<div class="judge_info fl">
+							<div class="stars_four"></div>
+							<div class="judge_detail">派送非常快，第二天上午就收到。2天使用初步总结，前一部手机也是华为P9plus.MATE10pro包装原封未拆精致大气。拆开后第一眼就看到宝石蓝的手机，非常惊艳；然后就是配件一应俱全。开机各方面设置，把通讯录、短信等同步好，同品牌手机同步很快。和P9plus一样的后置指纹识别很方便。录制指纹容易，解锁非常快，秒开！屏幕完好，默认分辨率显示效果很好。</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="tab_content">
+				<dl>
+					<dt>售后服务：</dt>
+					<dd>它纤薄如刃，轻盈如羽，却又比以往速度更快、性能更强大。它为你展现的，是迄今最明亮、最多彩的 Mac 笔记本显示屏。它更配备了触控栏，一个内置于键盘的玻璃面多点触控条，让你能在需要时快速取用各种工具。MacBook Pro 是对我们突破性理念的一场出色演绎，而它，也正期待着演绎你的奇思妙想。 </dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div id="footer">
+	<div class="link">
+		<a href="">关于我们</a>
+		|
+		<a href="">联系我们</a>
+		|
+		<a href="">人才招聘</a>
+		|
+		<a href="">商家入驻</a>
+		|
+		<a href="">广告服务</a>
+		|
+		<a href="">Hello社区</a>
+		|
+		<a href="">友情链接</a>
+		|
+		<a href="">销售联盟</a>
+		|
+		<a href="">手机商城</a>
+		|
+		<a href="">Hello公益</a>
+	</div>
+	<div class="Copyright">
+		Copyright @ 2018-2019 superHRH.com 版权所有
+	</div>
+</div>
+    {% block js %}{% endblock %}
+</body>
+</html>

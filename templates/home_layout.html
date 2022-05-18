@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    {% block css %}{% endblock %}
+</head>
+<body>
+<!--头部-->
+<div id="header">
+      <!--顶部-->
+    <div class="header_top">
+        <div class="header_top_center">
+            <div class="h_top_left">
+                <div style="margin-right: 30px;display: inline-block">
+
+                    <a href="{% url 'goods:index' %}">商城首页</a>
+                </div>
+                嗷，欢迎来到老虎商城
+            </div>
+            <div class="h_top_right">
+                <a href="{% url 'appUser:user_login' %}">登录</a>
+                <a href="regist.html">免费注册</a>
+                <a href="{% url 'order:shoppingcar' %}">购物车</a>
+                <a href="{% url 'order:order_list' %}">我的订单</a>
+            </div>
+        </div>
+    </div>
+      <!--中部搜索-->
+    <div class="header_center">
+        <div class="h_c_logo">
+            <img src="{% static 'img/logo.png' %}" alt="">
+        </div>
+
+        <div class="h_c_search">
+            <form action="{% url 'goods:search' %}" >
+                <input type="text" placeholder="搜索 天猫 商品/品牌/店铺" class="t_input">
+                <input type="submit" class="t_button" value="搜索">
+            </form>
+            <div class="hot">
+                <a href="#">新款连衣裙</a>
+                <a href="#">四件套</a>
+                <a href="#">潮流T恤</a>
+                <a href="#">时尚女鞋</a>
+                <a href="#">短裤半身裙</a>
+            </div>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">电脑办公</a></li>
+            <li><a href="#">家具家居</a></li>
+            <li><a href="#">鲜果时光</a></li>
+            <li><a href="#">图书音像</a></li>
+            <li><a href="#">母婴孕婴</a></li>
+        </ul>
+    </div>
+</div>
+    {% block content %}{% endblock %}
+<!---尾部--->
+<div id="footer">
+    <div class="link">
+        <a href="">关于我们</a>
+        |
+        <a href="">联系我们</a>
+        |
+        <a href="">人才招聘</a>
+        |
+        <a href="">商家入驻</a>
+        |
+        <a href="">广告服务</a>
+        |
+        <a href="">Hello社区</a>
+        |
+        <a href="">友情链接</a>
+        |
+        <a href="">销售联盟</a>
+        |
+        <a href="">手机商城</a>
+        |
+        <a href="">Hello公益</a>
+    </div>
+    <div class="Copyright">
+        Copyright @ 2018-2019 superHRH.com 版权所有
+    </div>
+</div>
+    {% block js %}{% endblock %}
+</body>
+</html>

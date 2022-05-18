@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+.judge_con{
+	width:1200px;
+	margin:0px auto;
+	overflow:hidden;
+}
+
+.judge_con .judge_goods{
+	width:1000px;
+	height:300px;
+    border:1px solid #ededed;
+	background:#fff;
+}
+.judge_size{
+    width:150px;
+    height:250px;
+}
+
+.judge_goods ul{width:160px;margin:50px auto 0;overflow:hidden;}
+.judge_goods li{overflow: hidden;margin-bottom:10px}
+.judge_goods li img{display:block;width:130px;height:130px;margin:10px auto;}
+.judge_goods li h4{width:160px;margin:0 auto;}
+.judge_goods li h4 a{font-weight:normal;color:#666;display:block;width:160px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.judge_goods li .prize{font-size:14px;color:#da260e;text-align:center}
+.judge_goods li input{display:block;margin:10px auto 0;}
+
+
+.judge_con .judge_goods_input{
+	width:1000px;
+	padding:20px;
+	height:360px;
+	border:1px solid #ededed;
+	background:#fff;
+}
+
+.judge_tip{font-size:12px;color:#f80;margin-bottom:10px}
+.judge_item{overflow:hidden;margin-bottom:10px}
+.judge_item label{float:left;width:120px;line-height:42px;color:#999}
+.stars{width:85px;height:16px;float:left;margin-top:11px}
+.stars .star_off{float:left;width:17px;height:16px;background:url(../images/stars.png) no-repeat;}
+.stars .light{background-position:left -16px;}
+
+.judge_item .score{float:left;line-height:42px;font-size:12px;margin-left:10px;color:#666;}
+
+.feelings a{float:left;line-height:40px;border:1px solid #ccc;padding:0px 10px;color:#5e5e5e;margin-right:10px;}
+.feelings a:hover{border:1px solid #e3101e;color:#e3101e}
+.feelings .select{border:1px solid #e3101e;background:url(../images/selected.png) right bottom no-repeat;}
+.judge_area{
+	float:left;width:735px;height:70px;margin-top:10px;border:1px solid #ccc;outline:none;padding:15px;
+}
+.judge_sub{
+	width:100px;height:32px;background-color:#fe0000;border:0px;font-size:14px;color:#fff;font-family:'Microsoft Yahei';outline:none;cursor:pointer;text-align:center;margin-top:10px;margin-left:120px;
+}
+.no_name{margin-left:15px;}
+
+.judge_list_con{
+	margin-top:10px;
+	overflow: hidden;
+	width:100%;
+}
+
+.judge_list_con li{
+	overflow:hidden;
+	border-bottom:1px solid #ededed;
+	padding:20px 0;
+}
+
+.user_info{
+	width:200px;
+}
+
+.user_info img{
+	width:40px;
+	height:40px;
+	border-radius:20px;
+	float:left;
+}
+.user_info b{
+	line-height:40px;
+	float: left;
+	font-weight:normal;
+	margin-left:20px;
+	font-size:12px;
+}
+
+.judge_info{
+	width:780px;
+}
+
+.stars_one,.stars_two,.stars_three,.stars_four,.stars_five{
+	width:85px;
+	height:17px;
+	background:url(../images/stars.png) left -80px no-repeat;
+	margin-bottom:10px;
+}
+
+.stars_one{
+	background-position:left -16px;
+}
+.stars_two{
+	background-position:left -32px;
+}
+.stars_three{
+	background-position:left -48px;
+}
+.stars_four{
+	background-position:left -64px;
+}
+
+.judge_detail{
+	font-size:12px;
+	line-height:20px;
+}
+.sub_page_name{font-size:20px;color:#666;margin:60px 0 0 43px}

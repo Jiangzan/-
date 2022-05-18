@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户中心主页</title>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1-dist/css/bootstrap.min.css' %}">
+    <style>
+        .photo{
+            float:left;
+            width:12%;
+        }
+        .intro{
+          font-weight: bold;
+          float:right;
+          width:88%;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="margin-top:30px;">
+<div class="panel panel-default">
+  <div class="panel-body">
+     <div class="photo"><img src="{%static 'img/R-C.png' %}" width="100px" height="100px"></div>
+      <div class="intro">
+          <br><br>
+          <p>昵称：小王</p>
+          <p>Email地址：18922.@163.com</p>
+      </div>
+      <ul class="nav nav-tabs" style="font-weight: bold;">
+          <li role="presentation"><a href="#">我的订单</a></li>
+          <li role="presentation"><a href="#">待收货<span class="badge">4</span></a></li>
+          <li role="presentation"><a href="#">待评价</a></li>
+      </ul>
+  </div>
+</div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">运输信息</h3>
+        </div>
+        <div class="panel-body" style="border:1px solid #dddddd;">
+            <div>商品1相关信息</div>
+            <div>您已在驿站完成取件，感谢使用....</div>
+            <div >2021-5-7</div>
+            <div align="right"><button class="btn btn-primary">确认收货</button></div>
+        </div>
+        <div class="panel-body" style="border:1px solid #dddddd;">
+            <div>商品2相关信息</div>
+            <div>您已在驿站完成取件，感谢使用....</div>
+            <div >2021-10-11</div>
+            <div align="right"><button class="btn btn-primary">确认收货</button></div>
+        </div>
+        <div class="panel-body" style="border:1px solid #dddddd;">
+            <div>商品3相关信息</div>
+            <div>您已在驿站完成取件，感谢使用....</div>
+            <div >2021-10-11</div>
+            <div align="right"><button class="btn btn-primary">确认收货</button></div>
+        </div>
+        <div class="panel-body" style="border:1px solid #dddddd;">
+            <div>商品4相关信息</div>
+            <div>您已在驿站完成取件，感谢使用....</div>
+            <div >2021-10-11</div>
+            <div align="right"><button class="btn btn-primary">确认收货</button></div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+<script src="{% static 'plugins/bootstrap-3.4.1-dist/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户中心</title>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/info.css' %}">
+</head>
+<body>
+<div class="nav-left">
+    <div class="logoname">用户中心</div>
+    <div class="navName">导航</div>
+    <ul class="nav nav-tabs nav-stacked">
+        <li role="presentation"><a class="nav-li active" href="../info" target="iframe"><i class='glyphicon glyphicon-home'></i>主页</a></li>
+        <li role="presentation"><a class="nav-li" href="../answer" target="iframe"><i class='glyphicon glyphicon-envelope'></i>消息中心<span class="badge">2</span></a></li>
+        <li role="presentation"><a class="nav-li" href="../detail" target="iframe"><i class='glyphicon glyphicon-user'></i>个人信息修改</a></li>
+        <li role="presentation"><a class="nav-li" href="../words" target="iframe"><i class='glyphicon glyphicon-comment'></i>留言板</a></li>
+    </ul>
+</div >
+
+<div class="nav-right">
+    <div class="nav-top">
+        <div style="text-align: right;"><a class="nav-li">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="nav-li">注销</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+    <div class="content-page" ref="cPage">
+        <iframe name="iframe" width="100%" height="100%" frameborder="0" src="../info"></iframe>
+    </div>
+</div>
+<script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+<script src="{% static 'plugins/bootstrap-3.4.1-dist/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

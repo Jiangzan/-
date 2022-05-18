@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息编辑界面</title>
+      <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1-dist/css/bootstrap.min.css' %}">
+    <style>
+        .navbar{
+            border-radius:0;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">用户管理系统</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/user/list">用户管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">登录</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">用户<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">个人资料</a></li>
+                        <li><a href="#">我的信息</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">注销</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div>
+        <div class="container">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                     <h3 class="panel-title">用户信息修改</h3>
+                 </div>
+                 <div class="panel-body">
+                     <form>
+                        <div class="form-group">
+                             <label>昵称</label>
+                             <input type="text" class="form-control" placeholder="昵称" name="title" value="小王">
+                         </div>
+                         <div class="form-group">
+                             <label>密码</label>
+                             <input type="text" class="form-control" placeholder="密码" name="password" value="zbcd">
+                         </div>
+                         <div class="form-group">
+                             <label>账户冻结情况</label>
+                             <input type="text" class="form-control" placeholder="1-冻结/0-活跃" name="frozen" value="18922.@163.com">
+                         </div>
+                         <div class="form-group">
+                             <label>Email</label>
+                             <input type="text" class="form-control" placeholder="Email地址" name="email" value="13522896657">
+                         </div>
+                         <div class="form-group">
+                             <label>电话号码</label>
+                             <input type="text" class="form-control" placeholder="phone number" name="phone number" value="金山村">
+                         </div>
+                         <div class="form-group">
+                             <label>具体地址</label>
+                             <input type="text" class="form-control" placeholder="地址" name="location" value="660899">
+                         </div>
+                         <div class="form-group">
+                             <label>邮编</label>
+                             <input type="text" class="form-control" placeholder="邮编" name="postcode" value="zbcd">
+                         </div>
+                         <div class="form-group">
+                             <label>真实姓名</label>
+                             <input type="text" class="form-control" placeholder="姓名" name="true name" value="王刚">
+                         </div>
+                         <div class="form-group">
+                             <label>注册时间</label>
+                             <input type="text" class="form-control" placeholder="注册时间" name="first" value="2007-8-5">
+                         </div>
+                         <div class="form-group">
+                             <label>最近一次登录时间</label>
+                             <input type="text" class="form-control" placeholder="最近登录" name="lately" value="2021-10-9">
+                         </div>
+                         <div class="form-group">
+                             <label>登录次数</label>
+                             <input type="text" class="form-control" placeholder="登录次数" name="num" value="70">
+                         </div>
+
+                         <button type="submit" class="btn btn-primary">提交</button>
+                     </form>
+                 </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+    <script src="{% static 'plugins/bootstrap-3.4.1-dist/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

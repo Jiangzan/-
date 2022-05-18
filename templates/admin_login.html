@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员登录界面</title>
+    <link rel="stylesheet" href="{% static 'plugins/dlmoban/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1-dist/css/bootstrap.min.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <img alt="Brand" src="{% static 'img/logo.png' %}" width="70px" height="60px">
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+            <a class="navbar-brand" href="#">首页</a>
+        </div>
+    </div>
+</nav>
+
+<canvas class="cavs" width="1575" height="1337"></canvas>
+
+<div class="loginmain">
+    <form action="{% url 'appUser:manager_list' %}">
+    <div class="login-title">
+        <span>管理员登录</span>
+    </div>
+
+    <div class="login-con">
+        <div class="login-user">
+            <div class="icon">
+                <img src="{% static 'plugins/dlmoban/image/user_icon_copy.png' %}" alt="">
+            </div>
+            <input type="text" name="usernem" placeholder="用户名" autocomplete="off" value="">
+        </div>
+        <div class="login-pwd">
+            <div class="icon">
+                <img src="{% static 'plugins/dlmoban/image/lock_icon_copy.png' %}" alt="">
+            </div>
+            <input type="password" name="pwd" placeholder="密码" autocomplete="off" value="">
+        </div>
+        <div class="login-btn">
+            <input type="submit" value="登录">
+        </div>
+    </div>
+    </form>
+</div>
+
+<script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
+<script src="{% static 'plugins/dlmoban/js/ban.js' %}"></script>
+</body>
+</html>
+

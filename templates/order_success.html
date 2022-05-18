@@ -1,0 +1,33 @@
+{% extends 'home_layout.html' %}
+{% load static %}
+{% block title %}提交订单{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/order_processing.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="search_bar clearfix">
+    <div class="cart-filter-bar">
+        <ul class="switch-cart">
+            <li class="switch-cart-item"><em>订单提交成功</em></li>
+        </ul>
+    </div>
+    <div class="common_list_con clearfix">
+        <div class="order_success">
+            <p><b>订单提交成功，订单总价<em>¥60</em></b></p>
+            <p>您的订单已成功生成，选择您想要的支付方式，订单号：1234567890</p>
+            <p><a href="/user_center_order.html">您可以在用户中心中我的订单中查看该订单</a></p>
+        </div>
+    </div>
+
+    <div class="order_submit clearfix">
+        <a href="/shop/user/shoppingcar/">支付</a>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}

@@ -1,0 +1,96 @@
+{% extends 'admin_layout.html' %}
+{% block content %}
+<div>
+    <div class="container">
+        <div style="margin-bottom:10px">
+            <a class="btn btn-success" href="/user/add/">新建用户</a>
+        </div>
+
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                用户列表
+            </div>
+
+
+            <!-- Table -->
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>昵称</th>
+                    <th>密码</th>
+                    <th>冻结情况</th>
+                    <th>Email</th>
+                    <th>电话号码</th>
+                    <th>地址</th>
+                    <th>邮编</th>
+                    <th>真实姓名</th>
+                    <th>注册时间</th>
+                    <th>最近登录时间</th>
+                    <th>登录次数</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>小王</td>
+                    <td>zbcd</td>
+                    <td>否</td>
+                    <td>18922.@163.com</td>
+                    <td>13522896657</td>
+                    <td>金山村</td>
+                    <td>660899</td>
+                    <td>王刚</td>
+                    <td>2007-8-5</td>
+                    <td>2021-10-9</td>
+                    <td>70</td>
+                    <td>
+                        <a class="btn btn-primary btn-xs" href="/user/edit/">编辑</a>
+                        <a class="btn btn-danger btn-xs" href="#">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>小红</td>
+                    <td>123456</td>
+                    <td>否</td>
+                    <td>17822.@qq.com</td>
+                    <td>15584975622</td>
+                    <td>大鱼县</td>
+                    <td>770569</td>
+                    <td>孙红</td>
+                    <td>2009-10-12</td>
+                    <td>2022-1-2</td>
+                    <td>100</td>
+                    <td>
+                        <a class="btn btn-primary btn-xs" href="/user/edit/">编辑</a>
+                        <a class="btn btn-danger btn-xs" href="#">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>阿强</td>
+                    <td>fgks123$</td>
+                    <td>否</td>
+                    <td>1223556.@qq.com</td>
+                    <td>15877986545</td>
+                    <td>陈家庄</td>
+                    <td>889456</td>
+                    <td>李强</td>
+                    <td>2012-5-1</td>
+                    <td>2022-7-17</td>
+                    <td>150</td>
+                    <td>
+                        <a class="btn btn-primary btn-xs" href="/user/edit/">编辑</a>
+                        <a class="btn btn-danger btn-xs" href="#">删除</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
